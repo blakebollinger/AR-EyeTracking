@@ -1,5 +1,3 @@
-import numpy as np
-import cv2 as cv
 from file_methods import load_pldata_file
 
 pupilData = load_pldata_file('./', 'gaze')
@@ -16,4 +14,6 @@ for datum in pupilData.data:
     for attr in datum['base_data'][0].items():
         f.write(str(attr) + '\n')
     
-    f.write('\n-----------------------------------------\n')
+    f.write('-----------------------------------------\n')
+
+f.close()
