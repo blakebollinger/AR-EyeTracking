@@ -61,3 +61,6 @@ crashlytics-build.properties
 #python
 __pycache__/
 
+data/
+
+.DS_Store
